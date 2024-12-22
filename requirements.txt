@@ -1,0 +1,15 @@
+asgiref==3.8.1
+certifi==2024.8.30
+distlib==0.3.8
+Django==5.1.2
+djangorestframework==3.13.1
+filelock==3.16.0
+pipenv==2024.0.2
+platformdirs==4.3.3
+psycopg2==2.9.10
+pyodbc==5.1.0
+pytz==2024.2
+setuptools==74.1.2
+sqlparse==0.5.1
+tzdata==2024.2
+virtualenv==20.26.4

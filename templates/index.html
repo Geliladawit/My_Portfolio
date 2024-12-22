@@ -1,0 +1,407 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/1.jpg' %}" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="{% static 'img/1.jpg' %}" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Gelila Dawit</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://github.com/Geliladawit" class="google-plus"><i class="bi bi-github"></i></a> 
+      <a href="http://linkedin.com/in/gelila-asrat-2b0826325" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#skills"><i class="bi bi-file-earmark-text navicon"></i> Skills</a></li>
+        <li><a href="#projects"><i class=" bi bi-images navicon"></i> Project</a></li>
+        <li><a href="#education"><i class="bi bi-hdd-stack navicon"></i> Education</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <section id="hero" class="hero section dark-background">
+
+      <img src="{% static 'img/hero2.jpg' %}" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Hi there!</h2>
+        <p>I'm Gelila Dawit, a Software Developer.</p>
+      </div>
+
+    </section>
+
+    <section id="about" class="about section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>A Software Engineering student driven by a passion for problem solving and a strong basis on data<br>
+          structures and algorithms. With a keen eye for detail and a love for coding, I'm dedicated to crafting<br>
+          solutionsthat make a difference. I thrive in collaborative environments and I am constantly seeking new <br>
+          challengesto grow my skills</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="{% static 'img/1.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>8 June 2003</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bahir Dar, Ethiopia</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>gelila.d.asrat@gmail.com</span></li>
+                </ul>
+                <a href="{% static 'Resume.pdf' %}" download>Download Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="skills" class="skills section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+          <div class="col-lg-6 skills">
+            <div class="progress">
+              <span class="skill">HTML </span>
+            </div>
+            <div class="progress">
+              <span class="skill">CSS</span>
+            </div>
+            <div class="progress">
+              <span class="skill">JavaScript</span>
+            </div>
+            <div class="progress">
+              <span class="skill">Bootstrap</span>
+            </div>
+            <div class="progress">
+              <span class="skill">Java</span>
+            </div>
+            <div class="progress">
+              <span class="skill">C++</span>
+            </div>
+          </div>
+        
+          <div class="col-lg-6 skills">
+            <div class="progress">
+              <span class="skill">Python</span>
+            </div>
+            <div class="progress">
+              <span class="skill">Django</span>
+            </div>
+            <div class="progress">
+              <span class="skill">Basic PHP</span>
+            </div>
+            <div class="progress">
+              <span class="skill">PostgreSQL</span>
+            </div>
+            <div class="progress">
+              <span class="skill">MSSQL</span>
+            </div>
+            <div class="progress">
+              <span class="skill">GitHub</span>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+     <section id="projects" class="portfolio section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+      </div>
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-product">Group Projects</li>
+            <li data-filter=".filter-branding">Personal Django Projetcs</li>
+          </ul>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'img/portfolio/house.jpg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>House Rental System Application</h4>
+                  <p>Linked list project</p>
+                  <a href="https://github.com/Geliladawit/Group_Project/blob/main/house%20rental%20system%20application%20(2).cpp" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'img/portfolio/book.jpg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Book Review App</h4>
+                  <p>Django Project</p>
+                  <a href="https://github.com/Geliladawit/Book_Review" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'img/portfolio/cisco.jpg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>CISCO Networking</h4>
+                  <a href="https://github.com/Geliladawit/Group_Project/blob/main/Networking%20Cisco%20Assignment.pkt" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'img/portfolio/news.jpg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Newspaper App</h4>
+                  <p>Django Project</p>
+                  <a href="https://github.com/Geliladawit/Newspaper_app" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'img/portfolio/api.jpg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Book Review App with API</h4>
+                  <p>Django Project</p>
+                  <a href="https://github.com/Geliladawit/Book_review-api_test" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'img/portfolio/api.jpg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>RecipeAPI_Project</h4>
+                  <p>Django Project</p>
+                  <a href="https://github.com/Geliladawit/recipeApi" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'img/portfolio/site.jpg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>News_Site_Project</h4>
+                  <p>Django Project</p>
+                  <a href="https://github.com/Geliladawit/News_Site_Projec" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="education" class="resume section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Education</h2>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Bachelor of Software Engineering</h3>
+
+            <div class="resume-item pb-0">
+              <h4> Bahir Dar University</h4>
+               <h5>2022 - 2026</h5>
+                <ul>
+                <li> Bahir Dar, Ethiopia</li>
+                <li>CGPA : 3.65/4</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Certificates</h3>
+            <div class="resume-item">
+              <h4>Udacity Nanodegree Program Completion</h4>
+              <h5>Data Analysis Fundamentals, July 2024 - September 2024</h5>
+             </div>
+
+            <h3 class="resume-title">Language</h3>
+            <div class="resume-item">
+              IELTS: 7.5
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contact" class="contact section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay=" 100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Me!</h3>
+                  <p>gelila.d.asrat@gmail.com.com</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="{% url 'contact' %}" method="post" class="django-email-form">
+              {% csrf_token %}            
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading" style="display: none;">Loading</div>
+                  <div class="error-message" style="display: none;"></div>
+                  <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+                  <button type="submit">Send Message</button>
+                </div>                
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Portfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/django-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/typed.js/typed.umd.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
